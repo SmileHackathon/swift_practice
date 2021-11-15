@@ -1,1 +1,1 @@
-# swift_practice
+# iOS勉強会で作成するじゃんけんアプリ
