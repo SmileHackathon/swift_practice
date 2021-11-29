@@ -17,7 +17,12 @@ struct ContentView: View {
             
             VStack {
                 Spacer()
-                JankenImageView(answerNumber: $answerNumber)
+                HStack{
+                    Spacer().frame(width: 50)
+                    JankenImageView(answerNumber: $answerNumber)
+                    Spacer().frame(width: 50)
+                }
+                Spacer()
                 JankenResultLabel(answerNumber: $answerNumber)
                 PlayJankenButton(answerNumber: $answerNumber)
             }
