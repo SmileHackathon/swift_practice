@@ -17,25 +17,23 @@ struct JankenImageView: View {
             Image("gu")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-            Spacer()
                 
         } else if answerNumber == 2 {
             Image("choki")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-            Spacer()
                 
         } else {
             Image("pa")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-            Spacer()
         }
     }
 }
 
 struct JankenImageView_Previews: PreviewProvider {
     static var previews: some View {
-        JankenImageView(answerNumber: .constant(0))
+        JankenImageView(answerNumber: .constant(3))
+            .background(Color.background)
     }
 }
